@@ -11,8 +11,6 @@
 //                 Hiroki Osame <https://github.com/privatenumber>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference types="node" />
-
 declare type AttrFunction = (
   el: CheerioElement,
   i: number,
