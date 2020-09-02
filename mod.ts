@@ -1,4 +1,4 @@
-// @deno-types="https://dev.jspm.io/@types/cheerio/index.d.ts"
+// @deno-types="https://cdn.jsdelivr.net/gh/justjavac/deno_cheerio/cheerio.d.ts"
 import cheerio from "https://dev.jspm.io/cheerio/index.js";
 
 const $ = cheerio.load('<h2 class="title">Hello world</h2>');
