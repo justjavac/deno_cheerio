@@ -307,7 +307,7 @@ interface CheerioElement {
 }
 
 interface CheerioAPI extends CheerioSelector, CheerioStatic {
-  load(html: string | Buffer, options?: CheerioOptionsInterface): CheerioStatic;
+  load(html: string, options?: CheerioOptionsInterface): CheerioStatic;
   load(
     element: CheerioElement,
     options?: CheerioOptionsInterface,
