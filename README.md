@@ -90,6 +90,8 @@ error: TS2580 [ERROR]: Cannot find name 'Buffer'. Do you need to install type de
 
 其实 Deno 也有 `Buffer`，我们需要使用 `Deno.Buffer` 来引用，考虑到 Deno 的 `Buffer` 和 Node.js 的并不兼容，于是直接删掉这个类型。
 
+(补充 2021-04-19，Deno 1.9 已经放弃了 `Deno.Buffer`，在 2.0 会将其移除)
+
 ```diff
 -  load(html: string | Buffer, options?: CheerioOptionsInterface): CheerioStatic;
 +  load(html: string, options?: CheerioOptionsInterface): CheerioStatic;
