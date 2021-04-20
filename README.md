@@ -6,7 +6,8 @@
 
 如何在 Deno 中使用 [cheerio](https://github.com/cheeriojs/cheerio)。
 
-cheerio 是一个非常流行的 npm 包，为服务器特别定制的，快速、灵活、实施的 jQuery 核心实现。可以说 cheerio 就是一个 Node.js 版的 jQuery。
+cheerio 是一个非常流行的 npm 包，为服务器特别定制的，快速、灵活、实施的 jQuery 核心实现。可以说 cheerio 就是一个 Node.js
+版的 jQuery。
 
 那么我们在 Deno 中如何使用这个库呢？
 
@@ -15,7 +16,7 @@ cheerio 是一个非常流行的 npm 包，为服务器特别定制的，快速�
 如果直接在 Deno 中使用源码，像这样：
 
 ```ts
-import * as Cheerio from "https://raw.githubusercontent.com/cheeriojs/cheerio/v1.0.0/lib/cheerio.js"
+import * as Cheerio from "https://raw.githubusercontent.com/cheeriojs/cheerio/v1.0.0/lib/cheerio.js";
 ```
 
 会报错：
@@ -88,7 +89,8 @@ error: TS2580 [ERROR]: Cannot find name 'Buffer'. Do you need to install type de
 
 `Buffer` 是 nodejs 的类型，所以报错了。
 
-其实 Deno 也有 `Buffer`，我们需要使用 `Deno.Buffer` 来引用，考虑到 Deno 的 `Buffer` 和 Node.js 的并不兼容，于是直接删掉这个类型。
+其实 Deno 也有 `Buffer`，我们需要使用 `Deno.Buffer` 来引用，考虑到 Deno 的 `Buffer` 和 Node.js
+的并不兼容，于是直接删掉这个类型。
 
 (补充 2021-04-19，Deno 1.9 已经放弃了 `Deno.Buffer`，在 2.0 会将其移除)
 
@@ -111,4 +113,5 @@ deno run https://cdn.jsdelivr.net/gh/justjavac/deno_cheerio/mod.ts
 
 ## License
 
-[deno_cheerio](https://github.com/justjavac/deno_cheerio) is released under the MIT License. See the bundled [LICENSE](./LICENSE) file for details.
+[deno_cheerio](https://github.com/justjavac/deno_cheerio) is released under the
+MIT License. See the bundled [LICENSE](./LICENSE) file for details.
